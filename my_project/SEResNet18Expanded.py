@@ -277,18 +277,18 @@ def main():
 
     arch.append(to_connection("GlobPool", "flatten_1"))
 
-    arch.append(to_SoftMax("soft_1", 2 ,"(1,0,0)", "(flatten_1-east)", height=4))
-    arch.append(to_connection("flatten_1", "soft_1"))
 
-    # arch.append(to_ReLu("relu2", 1300, "(1,0,0)", "(relu1-east)", depth=48),)
-    # arch.append(to_connection("relu1", "relu2"),)
-    # #
-    # arch.append(to_ReLu("relu3", 50, "(1,0,0)", "(relu2-east)", depth=9),)
-    # #
-    # arch.append(to_connection("relu2", "relu3"),)
-    # #
-    # arch.append(to_SoftMax("soft1", 2 ,"(1,0,0)", "(relu3-east)", depth=2),)
-    # arch.append(to_connection("relu3", "soft1"),)
+    arch.append(to_Dropout("dropout_1", 512, "(0,0,0)", "(flatten_1-east)", height=height * 4))
+
+    arch.append(to_ReLu("relu1", 128, "(1,0,0)", "(dropout_1-east)", height=height * 3))
+    arch.append(to_connection("flatten_1", "relu1"), )
+
+    arch.append(to_ReLu("relu2", 32, "(1,0,0)", "(relu1-east)", height=15), )
+    arch.append(to_connection("relu1", "relu2"), )
+    #
+    arch.append(to_SoftMax("soft1", 2, "(1,0,0)", "(relu2-east)", height=4), )
+    #
+    arch.append(to_connection("relu2", "soft1"), )
 
     arch.append(to_end())
 

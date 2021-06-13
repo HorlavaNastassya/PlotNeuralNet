@@ -15,9 +15,10 @@ def to_cor():
     return r"""
 \def\ConvColor{rgb:yellow,5;red,2.5;white,5}
 \def\ConvReluColor{rgb:yellow,5;red,5;white,5}
-\def\PoolColor{rgb:red,1;black,0.3}
-\def\GlobalPoolColor{rgb:blue,5;red,5;white,4}
-\def\FcColor{rgb:blue,5;green,15;red,2.5;white,7.5}
+\def\SEColor{teal}
+\def\PoolColor{rgb:red,5;blue,1;black,2.3}
+\def\GlobalPoolColor{rgb:blue,5;red,5;blue,2;white,7}
+\def\FcColor{rgb:blue,7;yellow,4;green,12;red,2.5;white,12}
 \def\FcDropout{rgb:blue,2;green,1;black,0.3}
 \def\SoftmaxColor{rgb:blue,5;red,2.5;green,4;white,2.5} 
 \def\ReLuColor{rgb:magenta,2;black,7}   
@@ -203,6 +204,24 @@ def to_Dropout( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
         }
     };
 """
+# ReLu
+def to_SELayer( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, height=3, depth=2, opacity=0.65, caption=" " ):
+    return r"""
+\pic[shift={"""+ offset +"""}] at """+ to +""" 
+    {Box={
+        name=""" + name +""",
+        caption="""+ caption +""",
+        xlabel={{" ","dummy"}},
+        zlabel="""+ str(s_filer) +""",
+        fill=\SEColor,
+        opacity="""+ str(opacity) +""",
+        height="""+ str(height) +""",
+        width="""+ str(width) +""",
+        depth="""+ str(depth) +"""
+        }
+    };
+"""
+
 
 # ReLu
 def to_Flatten( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, height=3, depth=2, opacity=1.0, caption=" " ):

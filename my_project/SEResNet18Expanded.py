@@ -40,7 +40,7 @@ def main():
         to_ReLu("relu_4", "", "(0,0,0)", "(conv_3-east)", height=height, depth=height,
                 width=2))
     arch.append(
-        to_Conv("conv_5", "", 8, offset="(0,0,0)", to="(relu_4-east)", height=height, depth=height,
+        to_Conv("conv_5", "", n_filters, offset="(0,0,0)", to="(relu_4-east)", height=height, depth=height,
                     width=3*num_filters))
 
     arch.append(
@@ -60,7 +60,7 @@ def main():
     # BasicBlock 2.2
     # height/=2
     arch.append(
-        to_Conv("conv_8", "", 8, offset="(2,0,0)", to="(relu_7-east)", height=height, depth=height,
+        to_Conv("conv_8", "", n_filters, offset="(2,0,0)", to="(relu_7-east)", height=height, depth=height,
                     width=3*num_filters))
     arch.append(to_connection("relu_7", "conv_8"))
 
@@ -69,7 +69,7 @@ def main():
                 width=2))
 
     arch.append(
-        to_Conv("conv_10", "", 8, offset="(0,0,0)", to="(relu_9-east)", height=height, depth=height,
+        to_Conv("conv_10", "", n_filters, offset="(0,0,0)", to="(relu_9-east)", height=height, depth=height,
                 width=3*num_filters))
     arch.append(
         to_SELayer("se_2", "", "(0,0,0)", "(conv_10-east)", height=height, depth=height,
@@ -278,7 +278,9 @@ def main():
     arch.append(to_connection("GlobPool", "flatten_1"))
 
 
-    arch.append(to_Dropout("dropout_1", 512, "(0,0,0)", "(flatten_1-east)", height=height * 4))
+    arch.append(to_Dropout("dropout_1", 512, "(1,0,0)", "(flatten_1-east)", height=height * 4))
+    arch.append(to_connection("flatten_1", "dropout_1"))
+
 
     arch.append(to_ReLu("relu1", 128, "(1,0,0)", "(dropout_1-east)", height=height * 3))
     arch.append(to_connection("flatten_1", "relu1"), )

@@ -2,35 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_project/SEResNet18Expanded.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/AlexNet/alexnet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/AlexNet/alexnet.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/AlexNet/alexnet_data.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/HED/HED.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/HED/HED.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LeNet/lenet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LeNet/lenet.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LeNet/lenet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LeNet/lenet_data2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/SoftmaxLoss/SoftmaxLoss.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/SoftmaxLoss/SoftmaxLoss.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Unet/Unet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Unet/Unet.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Unet_Ushape/Unet_ushape.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Unet_Ushape/Unet_ushape.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/VGG16/vgg16.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/VGG16/vgg16.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/fcn32s/fcn32.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/fcn32s/fcn32.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/fcn8s/cats.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/fcn8s/fcn8.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/fcn8s/fcn8.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/Conv5_FC3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/Conv5_FC3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/ResNet18.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/ResNet18.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/ResNet18Expanded.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/ResNet18Expanded.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layers/Box.sty" beforeDir="false" afterPath="$PROJECT_DIR$/layers/Box.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/ResNet18.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/ResNet18.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_project/SEResNet18.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18Expanded.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18Expanded.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18Expanded.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18Expanded.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pycore/tikzeng.py" beforeDir="false" afterPath="$PROJECT_DIR$/pycore/tikzeng.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +68,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/my_project" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_project" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +81,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536764917516</updated>
-      <workItem from="1623579218513" duration="3166000" />
+      <workItem from="1623579218513" duration="3214000" />
+      <workItem from="1623583993836" duration="2515000" />
     </task>
     <servers />
   </component>
@@ -138,6 +122,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />

@@ -48,8 +48,8 @@ def to_Conv( name, s_filer=256, n_filer=64, offset="(0,0,0)", to="(0,0,0)", widt
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +r""",
-        xlabel={{"""+ str(n_filer) +""", }},
+        caption="""+ str(n_filer) +r""",
+        xlabel={{"""+ str(caption) +""", }},
         zlabel="""+ str(s_filer) +""",
         fill=\ConvColor,
         opacity="""+ str(opacity) +""",
@@ -68,7 +68,7 @@ def to_ConvConvRelu( name, s_filer=256, n_filer=(64,64), offset="(0,0,0)", to="(
 \pic[shift={ """+ offset +""" }] at """+ to +""" 
     {RightBandedBox={
         name="""+ name +""",
-        caption="""+ caption +""",
+        caption="""+ str(n_filer[0]) +""",
         xlabel={{ """+ str(n_filer[0]) +""", """+ str(n_filer[1]) +""" }},
         zlabel="""+ str(s_filer) +""",
         fill=\ConvColor,
@@ -87,7 +87,7 @@ def to_Pool(name, offset="(0,0,0)", to="(0,0,0)", width=1, height=32, depth=32, 
 \pic[shift={ """+ offset +""" }] at """+ to +""" 
     {Box={
         name="""+name+""",
-        caption="""+ caption +r""",
+        caption="""+ str(caption) +r""",
         fill=\PoolColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -103,7 +103,7 @@ def to_GlobalPool(name, offset="(0,0,0)", to="(0,0,0)", width=1, height=32, dept
 \pic[shift={ """+ offset +""" }] at """+ to +""" 
     {Box={
         name="""+ name +r""",
-        caption="""+ caption +r""",
+        caption="""+ str(caption) +r""",
         fill=\GlobalPoolColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -120,8 +120,8 @@ def to_ConvRelu( name, s_filer=256, n_filer=64, offset="(0,0,0)", to="(0,0,0)", 
 \pic[shift={ """+ offset +""" }] at """+ to +""" 
     {RightBandedBox={
         name="""+ name + """,
-        caption="""+ caption + """,
-        xlabel={{ """+ str(n_filer) + """, }},
+        caption="""+ str(s_filer) + """,
+        xlabel={{ """+ str(caption) + """, }},
         zlabel="""+ str(s_filer) +r""",
         fill=\ConvColor,
         bandfill=\ConvReluColor,
@@ -140,8 +140,8 @@ def to_ConvSoftMax( name, s_filer=40, offset="(0,0,0)", to="(0,0,0)", width=1, h
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
-        zlabel="""+ str(s_filer) +""",
+        caption="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\SoftmaxColor,
         height="""+ str(height) +""",
         width="""+ str(width) +""",
@@ -156,9 +156,9 @@ def to_SoftMax( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
+        caption="""+ str(s_filer) +""",
         xlabel={{" ","dummy"}},
-        zlabel="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\SoftmaxColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -175,9 +175,9 @@ def to_ReLu( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, height=3
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
+        caption="""+ str(s_filer) +""",
         xlabel={{" ","dummy"}},
-        zlabel="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\ConvReluColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -193,9 +193,9 @@ def to_Dropout( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
+        caption="""+ str(s_filer) +""",
         xlabel={{" ","dummy"}},
-        zlabel="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\FcDropout,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -210,9 +210,9 @@ def to_SELayer( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
+        caption="""+ str(s_filer) +""",
         xlabel={{" ","dummy"}},
-        zlabel="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\SEColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -229,9 +229,9 @@ def to_Flatten( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Box={
         name=""" + name +""",
-        caption="""+ caption +""",
+        caption="""+ str(s_filer) +""",
         xlabel={{" ","dummy"}},
-        zlabel="""+ str(s_filer) +""",
+        zlabel="""+ str(caption) +""",
         fill=\FcColor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
@@ -241,7 +241,7 @@ def to_Flatten( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=2, heigh
     };
 """
 
-def to_Sum( name, offset="(0,0,0)", to="(0,0,0)", radius=2.5, opacity=1.0):
+def to_Sum( name, offset="(0,0,0)", to="(0,0,0)", radius=3.5, opacity=1.0):
     return r"""
 \pic[shift={"""+ offset +"""}] at """+ to +""" 
     {Ball={

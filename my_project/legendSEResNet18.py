@@ -13,7 +13,7 @@ def main():
         to_begin(),
 
     ]
-    height, width=3, 15
+    height, width=2, 15
     arch.append(
         to_Conv("conv_1", "", "Convolution Set", offset="(0,0,0)", height=height, depth=0,
                 width=width))

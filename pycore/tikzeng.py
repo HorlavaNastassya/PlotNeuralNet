@@ -22,7 +22,7 @@ def to_cor():
 \def\FcDropout{rgb:blue,2;green,1;black,0.3}
 \def\SoftmaxColor{rgb:blue,5;red,2.5;green,4;white,2.5} 
 \def\ReLuColor{rgb:magenta,2;black,7}   
-\def\SumColor{rgb:blue,7;green,12;white,2}
+\def\SumColor{rgb:white,2}
 """
 
 def to_begin():

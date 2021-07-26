@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/my_project/legendConv5FC3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/legendResNet18.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/legendResNet18Expanded.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/legendSEResNet18.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_project/legendSEResNet18Expanded.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layers/Box.sty" beforeDir="false" afterPath="$PROJECT_DIR$/layers/Box.sty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/ResNet18.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/ResNet18.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18Expanded.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18Expanded.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_project/SEResNet18Expanded.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_project/SEResNet18Expanded.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layers/Ball.sty" beforeDir="false" afterPath="$PROJECT_DIR$/layers/Ball.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_project/ResNet18.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pycore/tikzeng.py" beforeDir="false" afterPath="$PROJECT_DIR$/pycore/tikzeng.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1536764917516</updated>
       <workItem from="1623579218513" duration="3214000" />
-      <workItem from="1623583993836" duration="2515000" />
+      <workItem from="1623583993836" duration="3316000" />
+      <workItem from="1627314267706" duration="2495000" />
     </task>
     <servers />
   </component>
@@ -123,8 +125,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
 </project>
